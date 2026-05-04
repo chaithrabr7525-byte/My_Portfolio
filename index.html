@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chaithra BR | Full Stack Developer</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            transition: all 0.4s ease;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border-radius: 16px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            transition: 0.3s;
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.02);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-900 dark:bg-gray-950 dark:text-white transition-colors duration-300">
+
+    <!-- CURSOR GLOW -->
+    <div id="cursor-glow" class="fixed w-40 h-40 bg-blue-500/20 blur-3xl rounded-full pointer-events-none"></div>
+
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-white/60 dark:bg-black/40 backdrop-blur-lg border-b border-gray-200 dark:border-white/10 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+
+            <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                C
+            </h1>
+
+            <ul class="hidden md:flex gap-8 font-semibold">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="theme-toggle" class="bg-gray-800 text-white dark:bg-white dark:text-black px-4 py-2 rounded transition-colors duration-300 hover:opacity-80">Theme</button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="min-h-screen flex items-center justify-center text-center px-6">
+        <div data-aos="fade-up">
+
+            <img src="mine.jpeg" alt="Chaithra B R" class="w-48 h-48 object-cover rounded-full mx-auto mb-8 shadow-2xl border-4 border-blue-500/30">
+
+            <h1 class="text-6xl lg:text-7xl font-extrabold leading-tight">
+                Hi, I'm
+                <span class="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                  CHAITHRA B R
+                </span>
+            </h1>
+
+            <p class="mt-6 text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
+                Full Stack Developer building scalable web apps with MERN & AI integration.
+            </p>
+
+            <div class="mt-10 flex gap-4 justify-center">
+                <a href="#projects" class="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg text-white">
+                    View Work
+                </a>
+                <a href="#contact"
+                    class="px-8 py-4 border border-gray-400 dark:border-white/20 rounded-xl hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-black transition">
+                    Contact Me
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-6">About Me</h2>
+            <p class="text-gray-600 dark:text-gray-400 leading-relaxed">
+                I am a passionate and dedicated developer specializing in building robust, real-world applications leveraging the latest modern technologies. Driven by a relentless curiosity and a problem-solving mindset, I thrive on tackling complex challenges and continuously expanding my technical expertise. My mission is to craft innovative and impactful digital experiences that not only meet user needs but also push the boundaries of what technology can achieve. I am committed to lifelong learning, embracing new tools and methodologies to deliver scalable, efficient, and user-centric solutions that make a meaningful difference.
+            </p>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="py-24 px-6">
+        <h2 class="text-4xl text-center font-bold mb-16">Projects</h2>
+
+        <div id="projects-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="py-24 px-6 bg-gray-200/50 dark:bg-black/40 transition-colors duration-300">
+        <h2 class="text-4xl text-center font-bold mb-16">Skills</h2>
+
+        <div class="max-w-4xl mx-auto space-y-6">
+
+            <div>
+                <p>JavaScript</p>
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded transition-colors duration-300">
+                    <div class="bg-blue-500 h-2 rounded w-[90%]"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>React</p>
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded transition-colors duration-300">
+                    <div class="bg-purple-500 h-2 rounded w-[25%]"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Node.js</p>
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded transition-colors duration-300">
+                    <div class="bg-green-500 h-2 rounded w-[60%]"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Python</p>
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded transition-colors duration-300">
+                    <div class="bg-blue-500 h-2 rounded w-[40%]"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>MongoDB</p>
+                <div class="w-full bg-gray-300 dark:bg-gray-700 rounded transition-colors duration-300">
+                    <div class="bg-green-500 h-2 rounded w-[60%]"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-24 px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+
+        <p class="text-gray-600 dark:text-gray-400 mb-6">Let's build something amazing together 🚀</p>
+
+        <div class="flex justify-center gap-6">
+            <a href="https://github.com/chaithrabr7525-byte/MERN_Stu_FebMay26Mys" class="underline" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/chaithra-br-877aa7314?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="underline" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/_chaithra_b_r/" class="underline" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init({ duration: 1000, once: true });
+
+        // Cursor Glow
+        document.addEventListener("mousemove", (e) => {
+            const glow = document.getElementById("cursor-glow");
+            glow.style.left = e.pageX + "px";
+            glow.style.top = e.pageY + "px";
+        });
+
+    </script>
+
+    <!-- JS FILES -->
+    <script src="js/data/projects.js"></script>
+    <script src="js/features/project-render.js"></script>
+    <script src="js/data/skills.js"></script>
+    <script src="js/features/skills-render.js"></script>
+    <script src="js/features/modal.js"></script>
+    <script src="js/features/contact-validation.js"></script>
+    <script src="js/features/theme-toggle.js"></script>
+    <script src="js/features/project-search.js"></script>
+    <script src="js/features/project-filter.js"></script>
+    <script src="js/features/typing-effect.js"></script>
+    <script src="js/features/sort-feature.js"></script>
+    <script src="js/main.js"></script>
+
+</html>
