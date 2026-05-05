@@ -42,5 +42,27 @@ const projectsData = [
     status: "Live",
     liveDemo: "#",
     github: "#"
+  },
+  {
+    id: 5,
+    name: "Fake & Malicious Detection System",
+    category: "AI/ML",
+    description:
+      "Advanced AI-powered system for detecting fake news, malicious content, and phishing attempts using machine learning algorithms and natural language processing.",
+    technologies: ["Python", "TensorFlow", "NLP", "Scikit-learn", "Flask"],
+    status: "In Progress",
+    liveDemo: "#",
+    github: "#"
+  },
+  {
+    id: 6,
+    name: "Interactive Game Concept",
+    category: "Game Development",
+    description:
+      "Innovative game concept featuring immersive storytelling, dynamic gameplay mechanics, and cutting-edge graphics. Built with modern game development frameworks.",
+    technologies: ["Unity", "C#", "Blender", "Photoshop", "Game Design"],
+    status: "Concept",
+    liveDemo: "#",
+    github: "#"
   }
 ];

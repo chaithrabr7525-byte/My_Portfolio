@@ -1,36 +1,29 @@
-function initModal(){
-    const modal = document.getElementById("contact-modal");
-    const modalContent = document.getElementById("modal-content");
-    const modalTrigger = document.getElementById("modal-trigger");
-    const modalClose = document.getElementById("modal-close");
-    const formCancel = document.getElementById("form-cancel");
+function initProjectFilter(){
+    const filterContainer = document.getElementById("project-filters");
 
-    if(!modal || !modalContent || !modalTrigger || !modalClose || !formCancel){
-        console.log("Modal element not found");
+    if(!filterContainer){
+        console.log("Filter container not found");
         return;
     }
-    function openModal(){
-        modal.classList.remove("hidden");
 
-        setTimeout(function(){
-            modalContent.classList.remove("scale-95","opacity-0");
-        },10);
-    }
-    function closeModal(){
-        modalContent.classList.add("scale-95","opacity-0");
-        setTimeout(function(){
-            modal.classList.add("hidden");
-        },200);
-    }
-    modalTrigger.addEventListener("click",openModal);
-    modalClose.addEventListener("click",closeModal);
-    formCancel.addEventListener("click",closeModal);
+    // =====Portfolio Project V3.0 assignment =======
+    const categories = ["All", "MERN", "Frontend", "JavaScript"];
 
-    //close when clicking on backdrop
-    modal.addEventListener("click",function(event){
-        if(event.target === modal){
-            closeModal();
-        }
+    categories.forEach(category => {
+        const btn = document.createElement("button");
+
+        btn.textContent = category;
+        btn.className = "px-4 py-2 bg-blue-200 rounded";
+
+        btn.addEventListener("click", function(){
+            if(category === "All"){
+                renderProjects(projectsData);
+            } else {
+                const filtered = projectsData.filter(p => p.category === category);
+                renderProjects(filtered);
+            }
+        });
+
+        filterContainer.appendChild(btn);
     });
-    console.log("Modal opened successfully");
 }
