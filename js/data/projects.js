@@ -10,19 +10,9 @@ const projectsData = [
     liveDemo: "#",
     github: "#"
   },
+  
   {
     id: 2,
-    name: "Medical AI Chatbot",
-    category: "MERN",
-    description:
-      "AI-powered chatbot for providing medical information and assistance.",
-    technologies: ["HTML","CSS","JS"],
-    status: "Live",
-    liveDemo: "#",
-    github: "#"
-  },
-  {
-    id: 3,
     name: "Portfolio Website",
     category: "Frontend",
     description:
@@ -32,19 +22,9 @@ const projectsData = [
     liveDemo: "#",
     github: "#"
   },
+  
   {
-    id: 4,
-    name: "Fetal Cerebellum in 2D Ultrasound",
-    category: "Python",
-    description:
-      "AI-powered tool for analyzing fetal cerebellum in 2D ultrasound images to assist in prenatal diagnosis.",
-    technologies: ["Python", "OpenCV", "NumPy"],
-    status: "Live",
-    liveDemo: "#",
-    github: "#"
-  },
-  {
-    id: 5,
+    id: 3,
     name: "Fake & Malicious Detection System",
     category: "AI/ML",
     description:
@@ -53,16 +33,6 @@ const projectsData = [
     status: "In Progress",
     liveDemo: "#",
     github: "#"
-  },
-  {
-    id: 6,
-    name: "Interactive Game Concept",
-    category: "Game Development",
-    description:
-      "Innovative game concept featuring immersive storytelling, dynamic gameplay mechanics, and cutting-edge graphics. Built with modern game development frameworks.",
-    technologies: ["Unity", "C#", "Blender", "Photoshop", "Game Design"],
-    status: "Concept",
-    liveDemo: "#",
-    github: "#"
   }
+  
 ];
