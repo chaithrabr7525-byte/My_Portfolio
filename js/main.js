@@ -197,24 +197,7 @@ function createProjectCard(project, index) {
                 </div>
             </div>
 
-            <!-- Action Buttons -->
-            <div class="flex gap-3">
-                <a href="${project.liveDemo}" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="flex-1 bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 
-                    hover:to-green-700 text-white px-4 py-2 rounded-lg text-sm font-bold 
-                    transition-all duration-300 text-center transform hover:scale-105 shadow-md">
-                    🌐 Live Demo
-                </a>
-                <a href="${project.github}" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    class="flex-1 bg-gradient-to-r from-gray-700 to-gray-800 hover:from-gray-800 
-                    hover:to-gray-900 dark:from-gray-600 dark:to-gray-700 dark:hover:from-gray-700 dark:hover:to-gray-800
-                    text-white px-4 py-2 rounded-lg text-sm font-bold 
-                    transition-all duration-300 text-center transform hover:scale-105 shadow-md">
-                    💻 Source Code
+            
                 </a>
             </div>
         </div>
@@ -371,7 +354,7 @@ function fetchGithubStats() {
 
     const username = "chaithrabr7525-byte";
 
-    fetch(`https://api.github.com/users/${username}`)
+    fetch(`https://chaithrabr.github.com/users/${username}`)
         .then(res => {
             if (!res.ok) throw new Error("Network response was not ok");
             return res.json();
